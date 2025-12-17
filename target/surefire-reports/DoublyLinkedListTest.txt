@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: DoublyLinkedListTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.124 s <<< FAILURE! -- in DoublyLinkedListTest
+DoublyLinkedListTest.TC_DLL_007_deleteTail -- Time elapsed: 0.011 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: El nuevo tail.next debe ser null ==> expected: <null> but was: <DDL_Node@62150f9e>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNull.failNotNull(AssertNull.java:50)
+	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:35)
+	at org.junit.jupiter.api.Assertions.assertNull(Assertions.java:283)
+	at DoublyLinkedListTest.TC_DLL_007_deleteTail(DoublyLinkedListTest.java:69)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+DoublyLinkedListTest.TC_DLL_010_reverseMultipleElements -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: El head debe ser el último elemento ==> expected: <4> but was: <1>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:559)
+	at DoublyLinkedListTest.TC_DLL_010_reverseMultipleElements(DoublyLinkedListTest.java:101)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

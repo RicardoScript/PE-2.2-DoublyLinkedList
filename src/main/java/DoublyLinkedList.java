@@ -78,9 +78,10 @@ public class DoublyLinkedList {
 
         // cambiar la cabecera con la cola
         // declarar variable temporal
-        temp = head;
-        head = tail;
-        tail = temp;
+        // FALLA INTENCIONAL: no intercambiamos head y tail correctamente
+        // temp = head;
+        // head = tail;
+        // tail = temp;
     }
 
     public boolean deleteByValue(int data) {
@@ -111,13 +112,14 @@ public class DoublyLinkedList {
         } else if (current == tail) {
             // caso 2: eliminar tail
             tail = tail.prev;
-            // cuando no tenga ningun elemento la cola va ser nula
-            tail.next = null;
+            // FALLA INTENCIONAL: olvidamos actualizar tail.next
+            // tail.next = null;
 
         } else {
             // si el nodo a eliminar es intermedio
             current.prev.next = current.next;
-            current.next.prev = current.prev;
+            // ALLA INTENCIONAL: olvidamos actualizar current.next.prev
+            // current.next.prev = current.prev;
         }
 
         return true;
